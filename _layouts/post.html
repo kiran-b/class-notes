@@ -11,13 +11,12 @@
   <!-- Set the viewport width to device width for mobile -->
   <meta name="viewport" content="width=device-width" />
 
-  <title>{{ page.title }}{% if page.title %} | {% endif %}</title>
+  <title>{{ page.title }}</title>
 
 <!-- CSS Files -->
   <link rel="stylesheet" href="/class-notes/assets/stylesheets/foundation.css">
   <link rel="stylesheet" href="/class-notes/assets/stylesheets/templates.css">
   <link rel="stylesheet" href="/class-notes/assets/stylesheets/app.css">
-
 
 <!-- JS Files -->
   <script src="/class-notes/assets/javascripts/jquery.js"></script>
@@ -32,34 +31,28 @@
   <![endif]-->
 
 </head>
-
-</head>
 <body>
 
   {% include nav.html %}
 
-  <div class="row">
-    <div class="twelve columns nav">
-      <!-- Main Banner Image - place in a paragraph to enforce the modular scale spacing -->
-      <p><img src="http://placehold.it/1000x400&text=[banner img]" /></p>
-    </div>
-  </div>
 
   <div class="row content">
 
     <!-- Main Content Section -->
     <!-- This has been source ordered to come first in the markup (and on small devices) but to be to the right of the nav on larger screens -->
-    <div class="nine columns push-three content">
+    <div class="nine columns push-three">
 
       {{ content }}
 
     </div>
 
+
     {% include side-nav.html %}
 
   </div>
 
-{% include footer.html %}
+
+  {% include footer.html %}
 
 </body>
 </html>
