@@ -1,4 +1,4 @@
 pygments: true
-permalink: pretty
+permalink: none
 
 siteurl: '/class-notes'
