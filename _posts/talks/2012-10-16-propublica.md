@@ -1,4 +1,10 @@
-# Propublica talk
+---
+layout: post
+title: Propublica - Software is Rebooting Journalism
+categories: talks
+---
+
+# Software is Rebooting Journalism: <small>Data Mining and Visualization in the Public Interest</small>
 
 ## News Applications
 - making journalism using SW instead of words and pictures
@@ -23,7 +29,7 @@
 	- freely browsable database of crimes reported in Chicago
 
 ## Part 1: Attributes of a News Application
-### Contextualizes!!
+### Contextualizes
 - what's it got to do with me?
 - how does it relate to other pieces of data?
 - demo: [opportunity gap](http://projects.propublica.org/schools/)
@@ -61,3 +67,16 @@
 	- pop culture and colloquial terms definitely show through depending on age group
 	- "a lot of what used to be obvious about campaigns is now unobvious. Giantish data sets make this hard."
 	- "start to help people understand the methodologies used in modern campaigns"
+
+## Open Source Code
+- open source tools, not whole news apps
+	- stateface: US state typeface
+	- timeline-setter
+
+## Q&As
+- made a recovery.gov app based off of data.gov info
+- why aren't there more of these things?
+	- structure of newsrooms still not great for this. tend to repel this sort of thing.
+	- still people in the newsroom who don't have the ability to work with databases, command line tools, etc.
+	- could benefit from a Build-your-own-news-app app: some sort of simple CMS for non-programmer journalists
+	- pair hacker and journalist

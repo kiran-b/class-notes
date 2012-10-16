@@ -1,3 +1,9 @@
+---
+layout: post
+title: Jack Dorsey on Square's Founding Story
+categories: talks
+---
+
 # Jack Dorsey
 
 ## Founding Story
