@@ -4,7 +4,7 @@ title: Propublica - Software is Rebooting Journalism
 categories: talks
 ---
 
-# Software is Rebooting Journalism: <small>Data Mining and Visualization in the Public Interest</small>
+# Software is Rebooting Journalism<br> <small>Data Mining and Visualization in the Public Interest</small>
 
 ## News Applications
 - making journalism using SW instead of words and pictures

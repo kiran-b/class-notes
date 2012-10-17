@@ -1,0 +1,19 @@
+---
+layout: default
+title: 21L011
+---
+<section role="banner">
+</section>
+<section class="content">
+  <h2>MIT's Intro to Film Class</h2>
+  <p>
+    Notes from lectures and recitations.
+  </p>
+
+  <h3>All classes:</h3>
+  <ul class="posts">
+    {% for post in site.categories.21L011 %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{site.siteurl}}{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+</section>

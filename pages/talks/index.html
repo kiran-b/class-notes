@@ -1,0 +1,19 @@
+---
+layout: default
+title: Summary | Talks
+---
+<section role="banner">
+</section>
+<section class="content">
+  <h2>Talks</h2>
+  <p>
+    Notes from talks and meetups I've attended.
+  </p>
+
+  <h3>All classes:</h3>
+  <ul class="posts">
+    {% for post in site.categories.talks %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{site.siteurl}}{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+</section>
