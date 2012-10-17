@@ -15,12 +15,15 @@ categories: talks
 - stock tables
 - 1821 piece on quantizing child poverty
 - 1876 sports scores
-- 1896 [NYT front page](http://www.ericson.net/content/wp-content/uploads/2010/11/1896-full-page-1000-337x400.png): tables and stats on election results
+- 1896 [NYT front page](http://www.ericson.net/content/wp-content/uploads/2010/11/1896-full-page-1000-337x400.png)
+	- tables and stats on election results
 	- mildly incorrect...
 - 1952: CBS uses Univac to predict the election from polls data
+	- probably the first use of a computer in data journalism
 	- [predicted correct result](http://www.wired.com/science/discoveries/news/2008/11/dayintech_1104), but didn't air it
 - 1973: data tables precinct by precinct on race, crime, etc.
 	- published full tables and maps
+	- also had a "nerd box" that explained methodology
 
 ## Today
 - "imagine a growing and thriving culture of data in newsrooms."
@@ -34,8 +37,7 @@ categories: talks
 - how does it relate to other pieces of data?
 - demo: [opportunity gap](http://projects.propublica.org/schools/)
 	- distribution of educational opportunities along various lines
-		- AP classes, higher math, and higher chemistry
-	- helping people look for access to opprotunities
+	- quality/opportunity measured in AP classes, higher math, and higher chemistry
 
 ### Remixable
 - expose the data to people in a ton of different ways
@@ -54,8 +56,7 @@ categories: talks
 ### Generative
 - generate other journalism
 - Propublica's happy if another newsorg picks up their data for a story
-- ex: doctor data allowed the Boston Globe to put together a few front-page pieces on the data
-	- one national app -> 124 local stories
+- ex: [Dollars for Docs](http://projects.propublica.org/docdollars/): one national app -> 124 local stories
 
 ## Demos!
 - [Unemployment trust fund](http://projects.propublica.org/unemployment/)
