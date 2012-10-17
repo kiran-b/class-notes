@@ -12,8 +12,11 @@
 /* -----------------------------------------
    Shared Styles
 ----------------------------------------- */
+body {
+	background-image: url('/class-notes/assets/images/furley_bg_dark.png');
+}
 .content {
-	background-color: #EEE;
+	background-image: url('/class-notes/assets/images/furley_bg.png');
 	padding: 15px;
 }
 .nav {
@@ -21,6 +24,9 @@
 }
 li p {
 	margin-bottom: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 500;
 }
 
 
