@@ -64,4 +64,13 @@ categories: 21L011
 - pivot pivot pivot
 	- ex: icorps application (how a substance permeates a membrane) pivoted into cosmetics
 	- pivot from super technical to unknown but lucrative market
--
+
+### finding problems for solutions
+- most of research focus on problems, given solutions. how do you deal with dead-end papers?
+- TALK TO PEOPLE. Get out of your silo, and talk to various markets.
+- VC and other investors look for a diverse team for exactly this reason.
+- nature of the team to learn from experience, to be able to handle pivot points
+
+### long term planning?
+- meh. need to be able to pivot quickly.
+- maintain a plan, but be able to pivot.
