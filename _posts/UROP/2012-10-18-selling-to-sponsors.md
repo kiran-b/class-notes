@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Selling Research to Sponsors
-categories: 21L011
+categories: UROP
 ---
 
 # 6.UAR: Selling to Sponsors
