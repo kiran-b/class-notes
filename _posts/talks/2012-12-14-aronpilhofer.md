@@ -104,7 +104,7 @@ categories: talks
 - "no one is cheering harder than the kindle fire and surface to fail than I am. God forbid we have to do this across tablet."
 - could see RWD being a "huger" problem in the future
 
-### Readers Expect Interactivity
+### Readers Expect Conversation
 
 #### Election Mood WordCloud
 - crowd-sourced person on the street story
