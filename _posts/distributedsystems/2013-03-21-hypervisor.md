@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hypervisor
-category: 6824
+category: distributed-systems
 ---
 
 # Hypervisor-based Fault Tolerance <small>T. Bressoud and F. Schneider</small>
@@ -65,7 +65,7 @@ in the instruction stream is reached.  On the processor they were working
 on, it had a counter that counted down by one per instruction, and when
 it reached 0, an interrupt was thrown.  Other options include periodic
 explicit calls of the hypervisor, among others.
-  This assumption allows the introduction of a concept called an `epoch.'
+  This assumption allows the introduction of a concept called an 'epoch.'
 An epoch is the portion of programs between hypervisor invocations (those
 not resulting from environment instruction assumptions).  Epochs must
 be the same for all virtual machines for this system to work.
@@ -80,13 +80,13 @@ of all environment instructions that it will execute and all of the
 interrupts that were delivered to the primary when it started epoch E.
 Thus, it is able to execute the next epoch EXACTLY as the primary did.
 If the primary failed during epoch E, then the backup will never receive
-and "[end, E]" message, and, after a timeout, will recognize that the
+and "(end, E)" message, and, after a timeout, will recognize that the
 primary has failed, then it promotes itself to primary, and, as the primary
 failed during its execution of epoch E, it has no responsibility anymore
 to behave in the same manner as the primary did.
   The primary ensures that after finishing epoch E, it does not continue
 until the backup has received all the messages from that epoch, at which
-time it sends an "[end, E]" message to the backup, notifying it that
+time it sends an "(end, E)" message to the backup, notifying it that
 the backup can start epoch E now, and then the primary starts epoch E+1.
 
 ## I/O instruction problem
@@ -98,7 +98,7 @@ as the primary is executing the same instruction seem, so it should
 receive the same interrupts.  However, between failure and the end of the
 epoch, the interrupts received by the primary are lost.  Thus, these
 must somehow be re-issued.  Hypervisor assumes that all I/O devices
-have the ability to issue an `uncertain interrupt,' telling the
+have the ability to issue an 'uncertain interrupt,' telling the
 processor that the I/O may or may not have been performed.  Hypervisor
 then keeps track of all pending I/O operations, and, upon failure, issues
 uncertain interrupts for them.  Since the operating system must be able
