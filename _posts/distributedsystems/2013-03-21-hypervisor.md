@@ -6,6 +6,7 @@ category: distributed-systems
 
 # Hypervisor-based Fault Tolerance <small>T. Bressoud and F. Schneider</small>
 
+## Introduction + Assumptions
 This paper presents an alternative to the general methods of providing
 fault-tolerant systems: special hardware, special operating system, or
 writing it in the application. The problem with hardware-based fault-tolerant
@@ -35,16 +36,16 @@ running at once (this is contract to IBM's system, which allowed several),
 which simplified their efforts quite a bit.
   In order for there system to work, they make several assumptions:
 
-## I/O Device Accessibility Assumption
+### I/O Device Accessibility Assumption
   I/O devices are shared between virtual machines.  Thus, the disks,
 the keyboard, the monitor, etc. can be controlled by any processor.
 
-## Virtual Machine Assumption
+### Virtual Machine Assumption
   Virtual machines correctly imitate the hardware.  This is fairly
 self-explanatory; if the VM's differ from the hardware, the O.S. may
 not work.
 
-## Ordinary Instructions Assumption
+### Ordinary Instructions Assumption
   An ordinary instruction is one that depends only on the virtual machine
 state (which includes memory, contents of registers, etc.).  This is
 as opposed to environment instructions, which depend on exterior 
@@ -54,12 +55,12 @@ things (time-of-day clock, content of I/O devices, etc.)
 ordinary instruction on two processors in the same virtual machine state
 has exactly the same effect.
 
-## Environment Instruction Assumption
+### Environment Instruction Assumption
   During environment instructions, the virtual machines have a chance
 to communicate.  This allows the system to ensure that whatever
 information was given the primary is also given to the backups.
 
-## Instruction-Stream Interrupt Assumption
+### Instruction-Stream Interrupt Assumption
   A mechanism is available to call the hypervisor when a specified point
 in the instruction stream is reached.  On the processor they were working
 on, it had a counter that counted down by one per instruction, and when
@@ -70,10 +71,11 @@ An epoch is the portion of programs between hypervisor invocations (those
 not resulting from environment instruction assumptions).  Epochs must
 be the same for all virtual machines for this system to work.
 
+## System
   Given these definitions, they designed a fault-tolerant system, using
-only two basic tricks: interrupts are delivered at epochs, and the
+only two basic tricks: **interrupts are delivered at epochs, and the
 result of environment instructions are passed from the primary to the
-backup.  Synchronization occurs at epoch breaks.
+backup.**  Synchronization occurs at epoch breaks.
   The backup always runs one epoch in the past with respect to the
 primary.  Thus, at the beginning of the epoch E, the backup has the result
 of all environment instructions that it will execute and all of the
