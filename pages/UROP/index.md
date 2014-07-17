@@ -12,6 +12,6 @@ title: Summary | Research
 
   <ul class="posts">
     {% for post in site.categories.UROP %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{site.siteurl}}{{ post.url }}">{{ post.title }}</a></li>
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
   </ul>
